@@ -132,11 +132,3 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
-
-
-@media (max-width: 768px) {
-    .imagem {
-        background-attachment: scroll;
-        min-height: 80vh;
-    }
-}
