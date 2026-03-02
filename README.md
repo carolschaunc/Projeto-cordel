@@ -1,6 +1,6 @@
 # 📜 Projeto Cordel
 ## 📌 Descrição: 
-Página web desenvolvida para mobile com HTML5 e CSS3 apresentando informações sobre poema de Cordel com responsividade.
+Página web desenvolvida com HTML5 e CSS3 apresentando informações sobre poema de Cordel com responsividade.
 
 ## 🎯 Objetivo: 
 Praticar estruturação de páginas com HTML
