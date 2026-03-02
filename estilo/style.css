@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap');
+
+
+:root{
+--fonte1: verdana, Geneva, Tahoma, Sans-serif;
+--fonte2: font-family: "Faculty Glyphic", sans-serif;
+--fonte3: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+*{
+              padding: 0px;
+              margin: 0px;
+              font-size: 1em;
+              box-sizing: border-box;
+}
+
+html, body{
+              background-color: rgb(0, 0, 0);
+              min-height: 100vh;
+              font-family: Georgia, serif;;
+padding: 80px 20px;
+    font-size: clamp(1.2rem, 3vw, 2rem);
+    line-height: 1.8;
+
+}
+
+header{
+              background-color: black;
+              color: white;
+              text-align: center;
+               background: black;
+               padding: 80px 20px;
+}
+}
+
+header h1{
+              padding: 50px;
+              font-variant: small-caps;
+              font-weight: var(--fonte2);
+              font-size: 7vw;
+              margin-bottom: 10px;
+              letter-spacing: 2px;
+}
+
+header p{
+              padding-bottom: 50px;
+              font-size: clamp(1rem, 2vw, 1.3rem);}
+
+a{
+              color: white;
+              text-decoration: none;
+              font-weight: bold;
+}
+a:hover{
+text-decoration: underline;
+}
+
+section{
+              padding-top: 10vh;
+              padding-bottom: 10vh;
+              line-height: 2em;
+              padding-left: 30px;
+              font-family: var(--fonte3);
+              font-size: 3.5vw;
+              border-radius: 12px;
+              font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+              line-height: 1.8;
+              }
+
+
+section p {
+              padding-bottom: 2em;
+}
+
+section.normal{
+              background-color: white;
+              color: black;    
+               padding: 80px 20px;
+                margin: auto;
+                font-size:70%;
+
+                line-height: 1.8;
+}
+
+
+section.imagem{
+              background-color: rgba(0, 0, 0, 0.233);
+              color: white;
+              box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.329);
+              background-size: cover;
+              background-attachment: fixed;
+}
+
+section#img01{ 
+              background-image: url('../imagens/background001.jpg');
+              background-position: right center;
+}
+
+section#img02{
+              background-image: url('../imagens/background002.jpg');
+              background-position: right center;
+}
+
+section.imagem p{
+              background: rgba(0, 0, 0, 0.315);
+              padding: 30px;
+              border-radius: 12px;
+              max-width: 600px;
+              width: 90%;
+              color: white;
+              font-size: clamp(1rem, 2vw, 1.3rem);
+              line-height: 1.6;
+}
+
+footer {
+    background: #000;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+    font-size: 0.9rem;
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+footer a {
+    color: #f1c40f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    .imagem {
+        background-attachment: scroll;
+        min-height: 80vh;
+    }
+}
