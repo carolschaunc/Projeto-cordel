@@ -13,12 +13,16 @@
               padding: 0px;
               margin: 0px;
               font-size: 1em;
+              box-sizing: border-box;
 }
 
 html, body{
-              background-color: darkgray;
+              background-color: rgb(0, 0, 0);
               min-height: 100vh;
-              font-family: var(--fonte1);
+              font-family: Georgia, serif;;
+padding: 80px 20px;
+    font-size: clamp(1.2rem, 3vw, 2rem);
+    line-height: 1.8;
 
 }
 
@@ -26,6 +30,9 @@ header{
               background-color: black;
               color: white;
               text-align: center;
+               background: black;
+               padding: 80px 20px;
+}
 }
 
 header h1{
@@ -33,11 +40,13 @@ header h1{
               font-variant: small-caps;
               font-weight: var(--fonte2);
               font-size: 7vw;
+              margin-bottom: 10px;
+              letter-spacing: 2px;
 }
 
 header p{
               padding-bottom: 50px;
-}
+              font-size: clamp(1rem, 2vw, 1.3rem);}
 
 a{
               color: white;
@@ -55,15 +64,24 @@ section{
               padding-left: 30px;
               font-family: var(--fonte3);
               font-size: 3.5vw;
+              border-radius: 12px;
+              font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+              line-height: 1.8;
+              }
 
-}
+
 section p {
               padding-bottom: 2em;
 }
 
 section.normal{
               background-color: white;
-              color: black;
+              color: black;    
+               padding: 80px 20px;
+                margin: auto;
+                font-size:70%;
+
+                line-height: 1.8;
 }
 
 
@@ -86,15 +104,39 @@ section#img02{
 }
 
 section.imagem p{
-              background-color: rgba(0, 0, 0, 0.24);
-             display: inline-block;
-             padding: 5px;
-             text-shadow: 1px 1px 0px black;
+              background: rgba(0, 0, 0, 0.315);
+              padding: 30px;
+              border-radius: 12px;
+              max-width: 600px;
+              width: 90%;
+              color: white;
+              font-size: clamp(1rem, 2vw, 1.3rem);
+              line-height: 1.6;
 }
 
-footer{
-              background-color: black;
-              text-align: center;
-              color: white;
-              padding: 10px;
+footer {
+    background: #000;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+    font-size: 0.9rem;
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+footer a {
+    color: #f1c40f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    .imagem {
+        background-attachment: scroll;
+        min-height: 80vh;
+    }
 }
